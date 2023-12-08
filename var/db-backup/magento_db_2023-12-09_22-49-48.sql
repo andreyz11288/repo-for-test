@@ -122,7 +122,7 @@ CREATE TABLE `m2_admin_system_messages` (
 
 LOCK TABLES `m2_admin_system_messages` WRITE;
 /*!40000 ALTER TABLE `m2_admin_system_messages` DISABLE KEYS */;
-INSERT  IGNORE INTO `m2_admin_system_messages` VALUES ('da332d712f3215b9b94bfa268c398323',2,'2023-12-08 17:20:36');
+INSERT  IGNORE INTO `m2_admin_system_messages` VALUES ('da332d712f3215b9b94bfa268c398323',2,'2023-12-08 17:20:36'),('eb3ed169f6ec379b9bbc42095cb99d07',1,'2023-12-09 20:47:09');
 /*!40000 ALTER TABLE `m2_admin_system_messages` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -164,7 +164,7 @@ CREATE TABLE `m2_admin_user` (
 
 LOCK TABLES `m2_admin_user` WRITE;
 /*!40000 ALTER TABLE `m2_admin_user` DISABLE KEYS */;
-INSERT  IGNORE INTO `m2_admin_user` VALUES (1,'Magento','Administrator','email@example.com','development','fad201ae29e1d1d65d9a3181c5d50c28a3fc18cd6a3eabbc24e72f6bd3bf8499:862BZfaKJopv0kowAgPLLAYLa4BtUPpJ:3_32_2_67108864','2023-12-08 16:58:57','2023-12-08 16:58:57',NULL,0,0,1,NULL,NULL,NULL,'en_US',0,NULL,NULL),(2,'Bss','Test','bss@bssgroup.vn','new-admin','9eacaf590c0ab69f43e1d1d6b8fecf6636837f08ecd3d88b8e46f0934fb10b80:V6R6XRjsZvvtwphkwvqhkSnhRtDyPGVp:3_32_2_67108864','2023-12-08 17:20:08','2023-12-08 17:54:44','2023-12-08 17:51:57',2,0,1,'{\"configState\":{\"admin_usage\":\"1\",\"admin_captcha\":\"1\",\"admin_emails\":\"0\",\"admin_startup\":\"0\",\"admin_url\":\"0\",\"admin_security\":\"0\",\"admin_dashboard\":\"0\",\"dev_image\":\"0\",\"dev_caching\":\"0\",\"dev_restrict\":\"0\",\"dev_front_end_development_workflow\":\"0\",\"dev_debug\":\"0\",\"dev_template\":\"0\",\"dev_translate_inline\":\"0\",\"dev_js\":\"0\",\"dev_static\":\"0\",\"dev_grid\":\"0\",\"system_cron\":\"0\",\"system_mysqlmq\":\"0\",\"system_smtp\":\"0\",\"system_currency\":\"0\",\"system_security\":\"1\",\"system_adminnotification\":\"0\",\"system_backup\":\"0\",\"system_full_page_cache\":\"0\",\"system_bulk\":\"0\",\"system_media_storage_configuration\":\"0\",\"system_upload_configuration\":\"0\",\"system_media_gallery\":\"0\",\"system_media_gallery_renditions\":\"0\",\"system_adobe_stock_integration\":\"0\"}}',NULL,NULL,'en_US',0,NULL,NULL),(3,'Bss','Test','bjbhss@bsup.vn','admin','801af71478b08fd0b2052cecbad69d9b5ff47adfb48e8db99fdd0c64fdb32f8e:dmbf9XWg9sM5N8UyNqh9tezj0aPKTo2b:3_32_2_67108864','2023-12-08 17:37:03','2023-12-08 17:37:03',NULL,0,0,1,NULL,NULL,NULL,'en_US',0,NULL,NULL);
+INSERT  IGNORE INTO `m2_admin_user` VALUES (1,'Magento','Administrator','email@example.com','development','fad201ae29e1d1d65d9a3181c5d50c28a3fc18cd6a3eabbc24e72f6bd3bf8499:862BZfaKJopv0kowAgPLLAYLa4BtUPpJ:3_32_2_67108864','2023-12-08 16:58:57','2023-12-08 16:58:57',NULL,0,0,1,NULL,NULL,NULL,'en_US',0,NULL,NULL),(2,'Bss','Test','bss@bssgroup.vn','new-admin','9eacaf590c0ab69f43e1d1d6b8fecf6636837f08ecd3d88b8e46f0934fb10b80:V6R6XRjsZvvtwphkwvqhkSnhRtDyPGVp:3_32_2_67108864','2023-12-08 17:20:08','2023-12-08 17:54:44','2023-12-08 17:51:57',2,0,1,'{\"configState\":{\"admin_usage\":\"1\",\"admin_captcha\":\"1\",\"admin_emails\":\"0\",\"admin_startup\":\"0\",\"admin_url\":\"0\",\"admin_security\":\"0\",\"admin_dashboard\":\"0\",\"dev_image\":\"0\",\"dev_caching\":\"0\",\"dev_restrict\":\"0\",\"dev_front_end_development_workflow\":\"0\",\"dev_debug\":\"0\",\"dev_template\":\"0\",\"dev_translate_inline\":\"0\",\"dev_js\":\"0\",\"dev_static\":\"0\",\"dev_grid\":\"0\",\"system_cron\":\"0\",\"system_mysqlmq\":\"0\",\"system_smtp\":\"0\",\"system_currency\":\"0\",\"system_security\":\"1\",\"system_adminnotification\":\"0\",\"system_backup\":\"0\",\"system_full_page_cache\":\"0\",\"system_bulk\":\"0\",\"system_media_storage_configuration\":\"0\",\"system_upload_configuration\":\"0\",\"system_media_gallery\":\"0\",\"system_media_gallery_renditions\":\"0\",\"system_adobe_stock_integration\":\"0\"}}',NULL,NULL,'en_US',0,NULL,NULL),(3,'Bss','Test','bjbhss@bsup.vn','admin','801af71478b08fd0b2052cecbad69d9b5ff47adfb48e8db99fdd0c64fdb32f8e:dmbf9XWg9sM5N8UyNqh9tezj0aPKTo2b:3_32_2_67108864','2023-12-08 17:37:03','2023-12-09 20:43:40','2023-12-09 20:43:40',6,0,1,'{\"configState\":{\"new_general\":\"1\"}}',NULL,NULL,'en_US',0,NULL,NULL);
 /*!40000 ALTER TABLE `m2_admin_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -211,7 +211,7 @@ CREATE TABLE `m2_admin_user_session` (
   KEY `M2_ADMIN_USER_SESSION_SESSION_ID` (`session_id`),
   KEY `M2_ADMIN_USER_SESSION_USER_ID` (`user_id`),
   CONSTRAINT `M2_ADMIN_USER_SESSION_USER_ID_M2_ADMIN_USER_USER_ID` FOREIGN KEY (`user_id`) REFERENCES `m2_admin_user` (`user_id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3 COMMENT='Admin User sessions table';
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb3 COMMENT='Admin User sessions table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -220,7 +220,7 @@ CREATE TABLE `m2_admin_user_session` (
 
 LOCK TABLES `m2_admin_user_session` WRITE;
 /*!40000 ALTER TABLE `m2_admin_user_session` DISABLE KEYS */;
-INSERT  IGNORE INTO `m2_admin_user_session` VALUES (1,NULL,2,1,'2023-12-08 17:20:34','2023-12-08 17:20:34','172.20.0.1'),(2,NULL,2,1,'2023-12-08 17:51:57','2023-12-08 17:55:16','172.21.0.1');
+INSERT  IGNORE INTO `m2_admin_user_session` VALUES (1,NULL,2,1,'2023-12-08 17:20:34','2023-12-08 17:20:34','172.20.0.1'),(2,NULL,2,1,'2023-12-08 17:51:57','2023-12-08 17:55:16','172.21.0.1'),(3,NULL,3,1,'2023-12-08 18:24:20','2023-12-08 18:24:20','172.21.0.1'),(4,NULL,3,1,'2023-12-08 19:25:30','2023-12-08 19:26:31','172.21.0.1'),(5,NULL,3,1,'2023-12-08 20:13:59','2023-12-08 20:17:27','172.21.0.1'),(6,NULL,3,1,'2023-12-09 12:53:11','2023-12-09 12:53:47','172.19.0.1'),(7,NULL,3,1,'2023-12-09 20:43:40','2023-12-09 20:47:09','172.19.0.1');
 /*!40000 ALTER TABLE `m2_admin_user_session` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -564,7 +564,7 @@ CREATE TABLE `m2_captcha_log` (
 
 LOCK TABLES `m2_captcha_log` WRITE;
 /*!40000 ALTER TABLE `m2_captcha_log` DISABLE KEYS */;
-INSERT  IGNORE INTO `m2_captcha_log` VALUES ('1','172.20.0.1',6,'2023-12-08 17:40:30'),('2','admin',16,'2023-12-08 17:50:28');
+INSERT  IGNORE INTO `m2_captcha_log` VALUES ('1','172.20.0.1',6,'2023-12-08 17:40:30');
 /*!40000 ALTER TABLE `m2_captcha_log` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -785,7 +785,7 @@ CREATE TABLE `m2_catalog_category_product` (
   KEY `M2_CATALOG_CATEGORY_PRODUCT_PRODUCT_ID` (`product_id`),
   CONSTRAINT `M2_CAT_CTGR_PRD_CTGR_ID_M2_CAT_CTGR_ENTT_ENTT_ID` FOREIGN KEY (`category_id`) REFERENCES `m2_catalog_category_entity` (`entity_id`) ON DELETE CASCADE,
   CONSTRAINT `M2_CAT_CTGR_PRD_PRD_ID_M2_CAT_PRD_ENTT_ENTT_ID` FOREIGN KEY (`product_id`) REFERENCES `m2_catalog_product_entity` (`entity_id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COMMENT='Catalog Product To Category Linkage Table';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 COMMENT='Catalog Product To Category Linkage Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -794,6 +794,7 @@ CREATE TABLE `m2_catalog_category_product` (
 
 LOCK TABLES `m2_catalog_category_product` WRITE;
 /*!40000 ALTER TABLE `m2_catalog_category_product` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_catalog_category_product` VALUES (1,2,1,0);
 /*!40000 ALTER TABLE `m2_catalog_category_product` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -881,6 +882,7 @@ CREATE TABLE `m2_catalog_category_product_index_store1` (
 
 LOCK TABLES `m2_catalog_category_product_index_store1` WRITE;
 /*!40000 ALTER TABLE `m2_catalog_category_product_index_store1` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_catalog_category_product_index_store1` VALUES (2,1,0,1,1,4);
 /*!40000 ALTER TABLE `m2_catalog_category_product_index_store1` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1250,7 +1252,7 @@ CREATE TABLE `m2_catalog_product_entity` (
   PRIMARY KEY (`entity_id`),
   KEY `M2_CATALOG_PRODUCT_ENTITY_ATTRIBUTE_SET_ID` (`attribute_set_id`),
   KEY `M2_CATALOG_PRODUCT_ENTITY_SKU` (`sku`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COMMENT='Catalog Product Table';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 COMMENT='Catalog Product Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1259,6 +1261,7 @@ CREATE TABLE `m2_catalog_product_entity` (
 
 LOCK TABLES `m2_catalog_product_entity` WRITE;
 /*!40000 ALTER TABLE `m2_catalog_product_entity` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_catalog_product_entity` VALUES (1,4,'simple','test',0,0,'2023-12-08 20:16:38','2023-12-08 20:16:38');
 /*!40000 ALTER TABLE `m2_catalog_product_entity` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1314,7 +1317,7 @@ CREATE TABLE `m2_catalog_product_entity_decimal` (
   CONSTRAINT `M2_CAT_PRD_ENTT_DEC_ATTR_ID_M2_EAV_ATTR_ATTR_ID` FOREIGN KEY (`attribute_id`) REFERENCES `m2_eav_attribute` (`attribute_id`) ON DELETE CASCADE,
   CONSTRAINT `M2_CAT_PRD_ENTT_DEC_ENTT_ID_M2_CAT_PRD_ENTT_ENTT_ID` FOREIGN KEY (`entity_id`) REFERENCES `m2_catalog_product_entity` (`entity_id`) ON DELETE CASCADE,
   CONSTRAINT `M2_CATALOG_PRODUCT_ENTITY_DECIMAL_STORE_ID_M2_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `m2_store` (`store_id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COMMENT='Catalog Product Decimal Attribute Backend Table';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 COMMENT='Catalog Product Decimal Attribute Backend Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1323,6 +1326,7 @@ CREATE TABLE `m2_catalog_product_entity_decimal` (
 
 LOCK TABLES `m2_catalog_product_entity_decimal` WRITE;
 /*!40000 ALTER TABLE `m2_catalog_product_entity_decimal` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_catalog_product_entity_decimal` VALUES (1,77,0,1,1.000000);
 /*!40000 ALTER TABLE `m2_catalog_product_entity_decimal` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1381,7 +1385,7 @@ CREATE TABLE `m2_catalog_product_entity_int` (
   CONSTRAINT `M2_CAT_PRD_ENTT_INT_ATTR_ID_M2_EAV_ATTR_ATTR_ID` FOREIGN KEY (`attribute_id`) REFERENCES `m2_eav_attribute` (`attribute_id`) ON DELETE CASCADE,
   CONSTRAINT `M2_CAT_PRD_ENTT_INT_ENTT_ID_M2_CAT_PRD_ENTT_ENTT_ID` FOREIGN KEY (`entity_id`) REFERENCES `m2_catalog_product_entity` (`entity_id`) ON DELETE CASCADE,
   CONSTRAINT `M2_CATALOG_PRODUCT_ENTITY_INT_STORE_ID_M2_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `m2_store` (`store_id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COMMENT='Catalog Product Integer Attribute Backend Table';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3 COMMENT='Catalog Product Integer Attribute Backend Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1390,6 +1394,7 @@ CREATE TABLE `m2_catalog_product_entity_int` (
 
 LOCK TABLES `m2_catalog_product_entity_int` WRITE;
 /*!40000 ALTER TABLE `m2_catalog_product_entity_int` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_catalog_product_entity_int` VALUES (1,97,0,1,1),(2,136,0,1,2),(3,99,0,1,4);
 /*!40000 ALTER TABLE `m2_catalog_product_entity_int` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1409,7 +1414,7 @@ CREATE TABLE `m2_catalog_product_entity_media_gallery` (
   PRIMARY KEY (`value_id`),
   KEY `M2_CATALOG_PRODUCT_ENTITY_MEDIA_GALLERY_ATTRIBUTE_ID` (`attribute_id`),
   CONSTRAINT `M2_CAT_PRD_ENTT_MDA_GLR_ATTR_ID_M2_EAV_ATTR_ATTR_ID` FOREIGN KEY (`attribute_id`) REFERENCES `m2_eav_attribute` (`attribute_id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COMMENT='Catalog Product Media Gallery Attribute Backend Table';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 COMMENT='Catalog Product Media Gallery Attribute Backend Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1418,6 +1423,7 @@ CREATE TABLE `m2_catalog_product_entity_media_gallery` (
 
 LOCK TABLES `m2_catalog_product_entity_media_gallery` WRITE;
 /*!40000 ALTER TABLE `m2_catalog_product_entity_media_gallery` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_catalog_product_entity_media_gallery` VALUES (1,90,'/a/-/a-cupcake-with-a-strawberry-on-top-and-a-strawberry-on-the-top.jpg','image',0);
 /*!40000 ALTER TABLE `m2_catalog_product_entity_media_gallery` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1444,7 +1450,7 @@ CREATE TABLE `m2_catalog_product_entity_media_gallery_value` (
   CONSTRAINT `FK_86496C11CBBB117006DCA52CC78C3F54` FOREIGN KEY (`value_id`) REFERENCES `m2_catalog_product_entity_media_gallery` (`value_id`) ON DELETE CASCADE,
   CONSTRAINT `M2_CAT_PRD_ENTT_MDA_GLR_VAL_ENTT_ID_M2_CAT_PRD_ENTT_ENTT_ID` FOREIGN KEY (`entity_id`) REFERENCES `m2_catalog_product_entity` (`entity_id`) ON DELETE CASCADE,
   CONSTRAINT `M2_CAT_PRD_ENTT_MDA_GLR_VAL_STORE_ID_M2_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `m2_store` (`store_id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COMMENT='Catalog Product Media Gallery Attribute Value Table';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 COMMENT='Catalog Product Media Gallery Attribute Value Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1453,6 +1459,7 @@ CREATE TABLE `m2_catalog_product_entity_media_gallery_value` (
 
 LOCK TABLES `m2_catalog_product_entity_media_gallery_value` WRITE;
 /*!40000 ALTER TABLE `m2_catalog_product_entity_media_gallery_value` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_catalog_product_entity_media_gallery_value` VALUES (1,0,1,NULL,1,0,1);
 /*!40000 ALTER TABLE `m2_catalog_product_entity_media_gallery_value` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1479,6 +1486,7 @@ CREATE TABLE `m2_catalog_product_entity_media_gallery_value_to_entity` (
 
 LOCK TABLES `m2_catalog_product_entity_media_gallery_value_to_entity` WRITE;
 /*!40000 ALTER TABLE `m2_catalog_product_entity_media_gallery_value_to_entity` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_catalog_product_entity_media_gallery_value_to_entity` VALUES (1,1);
 /*!40000 ALTER TABLE `m2_catalog_product_entity_media_gallery_value_to_entity` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1533,7 +1541,7 @@ CREATE TABLE `m2_catalog_product_entity_text` (
   CONSTRAINT `M2_CAT_PRD_ENTT_TEXT_ATTR_ID_M2_EAV_ATTR_ATTR_ID` FOREIGN KEY (`attribute_id`) REFERENCES `m2_eav_attribute` (`attribute_id`) ON DELETE CASCADE,
   CONSTRAINT `M2_CAT_PRD_ENTT_TEXT_ENTT_ID_M2_CAT_PRD_ENTT_ENTT_ID` FOREIGN KEY (`entity_id`) REFERENCES `m2_catalog_product_entity` (`entity_id`) ON DELETE CASCADE,
   CONSTRAINT `M2_CATALOG_PRODUCT_ENTITY_TEXT_STORE_ID_M2_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `m2_store` (`store_id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COMMENT='Catalog Product Text Attribute Backend Table';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 COMMENT='Catalog Product Text Attribute Backend Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1542,6 +1550,7 @@ CREATE TABLE `m2_catalog_product_entity_text` (
 
 LOCK TABLES `m2_catalog_product_entity_text` WRITE;
 /*!40000 ALTER TABLE `m2_catalog_product_entity_text` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_catalog_product_entity_text` VALUES (1,85,0,1,'test');
 /*!40000 ALTER TABLE `m2_catalog_product_entity_text` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1600,7 +1609,7 @@ CREATE TABLE `m2_catalog_product_entity_varchar` (
   CONSTRAINT `M2_CAT_PRD_ENTT_VCHR_ATTR_ID_M2_EAV_ATTR_ATTR_ID` FOREIGN KEY (`attribute_id`) REFERENCES `m2_eav_attribute` (`attribute_id`) ON DELETE CASCADE,
   CONSTRAINT `M2_CAT_PRD_ENTT_VCHR_ENTT_ID_M2_CAT_PRD_ENTT_ENTT_ID` FOREIGN KEY (`entity_id`) REFERENCES `m2_catalog_product_entity` (`entity_id`) ON DELETE CASCADE,
   CONSTRAINT `M2_CATALOG_PRODUCT_ENTITY_VARCHAR_STORE_ID_M2_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `m2_store` (`store_id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COMMENT='Catalog Product Varchar Attribute Backend Table';
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb3 COMMENT='Catalog Product Varchar Attribute Backend Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1609,6 +1618,7 @@ CREATE TABLE `m2_catalog_product_entity_varchar` (
 
 LOCK TABLES `m2_catalog_product_entity_varchar` WRITE;
 /*!40000 ALTER TABLE `m2_catalog_product_entity_varchar` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_catalog_product_entity_varchar` VALUES (1,134,0,1,'2'),(2,87,0,1,'/a/-/a-cupcake-with-a-strawberry-on-top-and-a-strawberry-on-the-top.jpg'),(3,86,0,1,'test '),(4,84,0,1,'test'),(5,120,0,1,'0'),(6,73,0,1,'test'),(7,106,0,1,'container2'),(8,104,0,1,'product-full-width'),(9,88,0,1,'/a/-/a-cupcake-with-a-strawberry-on-top-and-a-strawberry-on-the-top.jpg'),(10,135,0,1,'/a/-/a-cupcake-with-a-strawberry-on-top-and-a-strawberry-on-the-top.jpg'),(11,89,0,1,'/a/-/a-cupcake-with-a-strawberry-on-top-and-a-strawberry-on-the-top.jpg'),(12,123,0,1,'test');
 /*!40000 ALTER TABLE `m2_catalog_product_entity_varchar` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1670,6 +1680,7 @@ CREATE TABLE `m2_catalog_product_index_eav` (
 
 LOCK TABLES `m2_catalog_product_index_eav` WRITE;
 /*!40000 ALTER TABLE `m2_catalog_product_index_eav` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_catalog_product_index_eav` VALUES (1,99,1,4,1);
 /*!40000 ALTER TABLE `m2_catalog_product_index_eav` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1906,6 +1917,7 @@ CREATE TABLE `m2_catalog_product_index_price` (
 
 LOCK TABLES `m2_catalog_product_index_price` WRITE;
 /*!40000 ALTER TABLE `m2_catalog_product_index_price` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_catalog_product_index_price` VALUES (1,0,1,2,1.000000,1.000000,1.000000,1.000000,NULL),(1,1,1,2,1.000000,1.000000,1.000000,1.000000,NULL),(1,2,1,2,1.000000,1.000000,1.000000,1.000000,NULL),(1,3,1,2,1.000000,1.000000,1.000000,1.000000,NULL);
 /*!40000 ALTER TABLE `m2_catalog_product_index_price` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2582,6 +2594,7 @@ CREATE TABLE `m2_catalog_product_index_website` (
 
 LOCK TABLES `m2_catalog_product_index_website` WRITE;
 /*!40000 ALTER TABLE `m2_catalog_product_index_website` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_catalog_product_index_website` VALUES (1,1,'2023-12-08',1);
 /*!40000 ALTER TABLE `m2_catalog_product_index_website` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3067,6 +3080,7 @@ CREATE TABLE `m2_catalog_product_website` (
 
 LOCK TABLES `m2_catalog_product_website` WRITE;
 /*!40000 ALTER TABLE `m2_catalog_product_website` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_catalog_product_website` VALUES (1,1);
 /*!40000 ALTER TABLE `m2_catalog_product_website` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3166,7 +3180,7 @@ CREATE TABLE `m2_cataloginventory_stock_item` (
   KEY `M2_CATALOGINVENTORY_STOCK_ITEM_STOCK_ID` (`stock_id`),
   CONSTRAINT `M2_CATINV_STOCK_ITEM_PRD_ID_M2_CAT_PRD_ENTT_ENTT_ID` FOREIGN KEY (`product_id`) REFERENCES `m2_catalog_product_entity` (`entity_id`) ON DELETE CASCADE,
   CONSTRAINT `M2_CATINV_STOCK_ITEM_STOCK_ID_M2_CATINV_STOCK_STOCK_ID` FOREIGN KEY (`stock_id`) REFERENCES `m2_cataloginventory_stock` (`stock_id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COMMENT='Cataloginventory Stock Item';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 COMMENT='Cataloginventory Stock Item';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3175,6 +3189,7 @@ CREATE TABLE `m2_cataloginventory_stock_item` (
 
 LOCK TABLES `m2_cataloginventory_stock_item` WRITE;
 /*!40000 ALTER TABLE `m2_cataloginventory_stock_item` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_cataloginventory_stock_item` VALUES (1,1,1,100.0000,0.0000,1,0,0,1,1.0000,1,10000.0000,1,1,NULL,1.0000,1,1,1,0,1,1.0000,1,0,0,0);
 /*!40000 ALTER TABLE `m2_cataloginventory_stock_item` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3204,6 +3219,7 @@ CREATE TABLE `m2_cataloginventory_stock_status` (
 
 LOCK TABLES `m2_cataloginventory_stock_status` WRITE;
 /*!40000 ALTER TABLE `m2_cataloginventory_stock_status` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_cataloginventory_stock_status` VALUES (1,0,1,100.0000,1);
 /*!40000 ALTER TABLE `m2_cataloginventory_stock_status` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3798,7 +3814,7 @@ CREATE TABLE `m2_core_config_data` (
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'Updated At',
   PRIMARY KEY (`config_id`),
   UNIQUE KEY `M2_CORE_CONFIG_DATA_SCOPE_SCOPE_ID_PATH` (`scope`,`scope_id`,`path`)
-) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8mb3 COMMENT='Config Data';
+) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb3 COMMENT='Config Data';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3807,7 +3823,7 @@ CREATE TABLE `m2_core_config_data` (
 
 LOCK TABLES `m2_core_config_data` WRITE;
 /*!40000 ALTER TABLE `m2_core_config_data` DISABLE KEYS */;
-INSERT  IGNORE INTO `m2_core_config_data` VALUES (1,'default',0,'catalog/search/engine','elasticsearch7','2023-12-08 16:58:49'),(2,'default',0,'catalog/search/elasticsearch7_server_hostname','elasticsearch','2023-12-08 16:58:49'),(3,'default',0,'web/seo/use_rewrites','1','2023-12-08 16:58:49'),(4,'default',0,'web/unsecure/base_url','https://test.local/','2023-12-08 16:58:49'),(5,'default',0,'web/secure/base_url','https://test.local/','2023-12-08 16:58:49'),(6,'default',0,'general/locale/code','en_US','2023-12-08 16:58:49'),(7,'default',0,'web/secure/use_in_frontend','1','2023-12-08 16:58:49'),(8,'default',0,'web/secure/use_in_adminhtml','1','2023-12-08 16:58:49'),(9,'default',0,'general/locale/timezone','America/Chicago','2023-12-08 16:58:49'),(10,'default',0,'currency/options/base','USD','2023-12-08 16:58:49'),(11,'default',0,'currency/options/default','USD','2023-12-08 16:58:50'),(12,'default',0,'currency/options/allow','USD','2023-12-08 16:58:50'),(13,'default',0,'general/region/display_all','1','2023-12-08 16:58:50'),(14,'default',0,'general/region/state_required','AL,AR,AU,BG,BO,BR,BY,CA,CH,CL,CN,CO,DK,EC,EE,ES,GR,GY,HR,IN,IS,IT,LT,LV,MX,PE,PL,PT,PY,RO,SE,SR,US,UY,VE','2023-12-08 16:58:53'),(15,'default',0,'catalog/category/root_id','2','2023-12-08 16:58:54'),(16,'default',0,'analytics/subscription/enabled','1','2023-12-08 16:58:55'),(17,'default',0,'crontab/default/jobs/analytics_subscribe/schedule/cron_expr','0 * * * *','2023-12-08 16:58:55'),(18,'default',0,'crontab/default/jobs/analytics_collect_data/schedule/cron_expr','00 02 * * *','2023-12-08 16:58:55'),(19,'default',0,'msp_securitysuite_recaptcha/frontend/enabled','0','2023-12-08 16:58:56'),(20,'default',0,'msp_securitysuite_recaptcha/backend/enabled','0','2023-12-08 16:58:56'),(21,'default',0,'twofactorauth/duo/application_key','EHb0wIDBA4O1hiMjMWz5rqQjczgLmrMqjx0ro8Fkdmg3E2dn9h9j7R0p7wAVVzJ9','2023-12-08 16:58:56'),(22,'default',0,'dev/static/sign','1','2023-12-08 16:58:57'),(23,'default',0,'dev/js/move_script_to_bottom','1','2023-12-08 16:58:57'),(24,'default',0,'dev/css/use_css_critical_path','1','2023-12-08 16:58:57'),(25,'default',0,'admin/usage/enabled','0','2023-12-08 17:20:41'),(26,'default',0,'recaptcha_backend/type_for/user_login',NULL,'2023-12-08 17:45:07'),(27,'default',0,'system/full_page_cache/varnish/access_list','localhost','2023-12-08 17:52:35'),(28,'default',0,'system/full_page_cache/varnish/backend_host','localhost','2023-12-08 17:52:35'),(29,'default',0,'system/full_page_cache/varnish/backend_port','8080','2023-12-08 17:52:35'),(30,'default',0,'system/full_page_cache/varnish/grace_period','300','2023-12-08 17:52:35'),(31,'default',0,'admin/captcha/enable','0','2023-12-08 17:52:53'),(32,'default',0,'admin/captcha/forms',NULL,'2023-12-08 17:52:53'),(33,'default',0,'system/mysqlmq/successful_messages_lifetime','10080','2023-12-08 17:54:44'),(34,'default',0,'system/mysqlmq/retry_inprogress_after','1440','2023-12-08 17:54:44'),(35,'default',0,'system/mysqlmq/failed_messages_lifetime','10080','2023-12-08 17:54:44'),(36,'default',0,'system/mysqlmq/new_messages_lifetime','10080','2023-12-08 17:54:44'),(37,'default',0,'system/security/max_session_size_admin','3600000','2023-12-08 17:54:44'),(38,'default',0,'system/backup/functionality_enabled','0','2023-12-08 17:54:44'),(39,'default',0,'system/bulk/lifetime','60','2023-12-08 17:54:44'),(40,'default',0,'system/media_storage_configuration/media_storage','0','2023-12-08 17:54:44'),(41,'default',0,'system/media_gallery/enabled','0','2023-12-08 17:54:44'),(42,'default',0,'system/media_gallery_renditions/enabled','1','2023-12-08 17:54:44'),(43,'default',0,'system/media_gallery_renditions/width','1000','2023-12-08 17:54:44'),(44,'default',0,'system/media_gallery_renditions/height','1000','2023-12-08 17:54:44'),(45,'default',0,'adobe_stock/integration/enabled','1','2023-12-08 17:54:44'),(46,'default',0,'adobe_ims/integration/admin_enabled','0','2023-12-08 17:54:44'),(47,'default',0,'adobe_ims/integration/api_key',NULL,'2023-12-08 17:54:44'),(48,'default',0,'adobe_ims/integration/private_key',NULL,'2023-12-08 17:54:44'),(49,'websites',1,'design/theme/theme_id','4','2023-12-08 17:55:08');
+INSERT  IGNORE INTO `m2_core_config_data` VALUES (1,'default',0,'catalog/search/engine','elasticsearch7','2023-12-08 16:58:49'),(2,'default',0,'catalog/search/elasticsearch7_server_hostname','elasticsearch','2023-12-08 16:58:49'),(3,'default',0,'web/seo/use_rewrites','1','2023-12-08 16:58:49'),(4,'default',0,'web/unsecure/base_url','https://test.local/','2023-12-08 16:58:49'),(5,'default',0,'web/secure/base_url','https://test.local/','2023-12-08 16:58:49'),(6,'default',0,'general/locale/code','en_US','2023-12-08 16:58:49'),(7,'default',0,'web/secure/use_in_frontend','1','2023-12-08 16:58:49'),(8,'default',0,'web/secure/use_in_adminhtml','1','2023-12-08 16:58:49'),(9,'default',0,'general/locale/timezone','America/Chicago','2023-12-08 16:58:49'),(10,'default',0,'currency/options/base','USD','2023-12-08 16:58:49'),(11,'default',0,'currency/options/default','USD','2023-12-08 16:58:50'),(12,'default',0,'currency/options/allow','USD','2023-12-08 16:58:50'),(13,'default',0,'general/region/display_all','1','2023-12-08 16:58:50'),(14,'default',0,'general/region/state_required','AL,AR,AU,BG,BO,BR,BY,CA,CH,CL,CN,CO,DK,EC,EE,ES,GR,GY,HR,IN,IS,IT,LT,LV,MX,PE,PL,PT,PY,RO,SE,SR,US,UY,VE','2023-12-08 16:58:53'),(15,'default',0,'catalog/category/root_id','2','2023-12-08 16:58:54'),(16,'default',0,'analytics/subscription/enabled','1','2023-12-08 16:58:55'),(17,'default',0,'crontab/default/jobs/analytics_subscribe/schedule/cron_expr','0 * * * *','2023-12-08 16:58:55'),(18,'default',0,'crontab/default/jobs/analytics_collect_data/schedule/cron_expr','00 02 * * *','2023-12-08 16:58:55'),(19,'default',0,'msp_securitysuite_recaptcha/frontend/enabled','0','2023-12-08 16:58:56'),(20,'default',0,'msp_securitysuite_recaptcha/backend/enabled','0','2023-12-08 16:58:56'),(21,'default',0,'twofactorauth/duo/application_key','EHb0wIDBA4O1hiMjMWz5rqQjczgLmrMqjx0ro8Fkdmg3E2dn9h9j7R0p7wAVVzJ9','2023-12-08 16:58:56'),(22,'default',0,'dev/static/sign','1','2023-12-08 16:58:57'),(23,'default',0,'dev/js/move_script_to_bottom','1','2023-12-08 16:58:57'),(24,'default',0,'dev/css/use_css_critical_path','1','2023-12-08 16:58:57'),(25,'default',0,'admin/usage/enabled','0','2023-12-08 17:20:41'),(26,'default',0,'recaptcha_backend/type_for/user_login',NULL,'2023-12-08 17:45:07'),(27,'default',0,'system/full_page_cache/varnish/access_list','localhost','2023-12-08 17:52:35'),(28,'default',0,'system/full_page_cache/varnish/backend_host','localhost','2023-12-08 17:52:35'),(29,'default',0,'system/full_page_cache/varnish/backend_port','8080','2023-12-08 17:52:35'),(30,'default',0,'system/full_page_cache/varnish/grace_period','300','2023-12-08 17:52:35'),(31,'default',0,'admin/captcha/enable','0','2023-12-08 17:52:53'),(32,'default',0,'admin/captcha/forms',NULL,'2023-12-08 17:52:53'),(33,'default',0,'system/mysqlmq/successful_messages_lifetime','10080','2023-12-08 17:54:44'),(34,'default',0,'system/mysqlmq/retry_inprogress_after','1440','2023-12-08 17:54:44'),(35,'default',0,'system/mysqlmq/failed_messages_lifetime','10080','2023-12-08 17:54:44'),(36,'default',0,'system/mysqlmq/new_messages_lifetime','10080','2023-12-08 17:54:44'),(37,'default',0,'system/security/max_session_size_admin','3600000','2023-12-08 17:54:44'),(38,'default',0,'system/backup/functionality_enabled','0','2023-12-08 17:54:44'),(39,'default',0,'system/bulk/lifetime','60','2023-12-08 17:54:44'),(40,'default',0,'system/media_storage_configuration/media_storage','0','2023-12-08 17:54:44'),(41,'default',0,'system/media_gallery/enabled','0','2023-12-08 17:54:44'),(42,'default',0,'system/media_gallery_renditions/enabled','1','2023-12-08 17:54:44'),(43,'default',0,'system/media_gallery_renditions/width','1000','2023-12-08 17:54:44'),(44,'default',0,'system/media_gallery_renditions/height','1000','2023-12-08 17:54:44'),(45,'default',0,'adobe_stock/integration/enabled','1','2023-12-08 17:54:44'),(46,'default',0,'adobe_ims/integration/admin_enabled','0','2023-12-08 17:54:44'),(47,'default',0,'adobe_ims/integration/api_key',NULL,'2023-12-08 17:54:44'),(48,'default',0,'adobe_ims/integration/private_key',NULL,'2023-12-08 17:54:44'),(49,'websites',1,'design/theme/theme_id','5','2023-12-08 17:55:08'),(50,'default',0,'new/general/greeting_message','Good Morning','2023-12-09 12:53:51');
 /*!40000 ALTER TABLE `m2_core_config_data` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -4484,7 +4500,7 @@ CREATE TABLE `m2_customer_visitor` (
   PRIMARY KEY (`visitor_id`),
   KEY `M2_CUSTOMER_VISITOR_CUSTOMER_ID` (`customer_id`),
   KEY `M2_CUSTOMER_VISITOR_LAST_VISIT_AT` (`last_visit_at`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COMMENT='Visitor Table';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3 COMMENT='Visitor Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4493,6 +4509,7 @@ CREATE TABLE `m2_customer_visitor` (
 
 LOCK TABLES `m2_customer_visitor` WRITE;
 /*!40000 ALTER TABLE `m2_customer_visitor` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_customer_visitor` VALUES (1,NULL,NULL,'2023-12-08 20:17:56','2023-12-08 21:15:44'),(2,NULL,NULL,'2023-12-08 23:46:29','2023-12-08 23:46:29'),(3,NULL,NULL,'2023-12-08 23:47:22','2023-12-08 23:47:22'),(4,NULL,NULL,'2023-12-09 08:42:34','2023-12-09 08:42:34'),(5,NULL,NULL,'2023-12-09 12:20:26','2023-12-09 12:20:26');
 /*!40000 ALTER TABLE `m2_customer_visitor` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -4551,7 +4568,7 @@ CREATE TABLE `m2_design_config_grid_flat` (
 
 LOCK TABLES `m2_design_config_grid_flat` WRITE;
 /*!40000 ALTER TABLE `m2_design_config_grid_flat` DISABLE KEYS */;
-INSERT  IGNORE INTO `m2_design_config_grid_flat` VALUES (0,NULL,NULL,NULL,''),(1,1,NULL,NULL,'4'),(2,1,1,1,'4');
+INSERT  IGNORE INTO `m2_design_config_grid_flat` VALUES (0,NULL,NULL,NULL,''),(1,1,NULL,NULL,'5'),(2,1,1,1,'5');
 /*!40000 ALTER TABLE `m2_design_config_grid_flat` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -5784,7 +5801,7 @@ CREATE TABLE `m2_indexer_state` (
 
 LOCK TABLES `m2_indexer_state` WRITE;
 /*!40000 ALTER TABLE `m2_indexer_state` DISABLE KEYS */;
-INSERT  IGNORE INTO `m2_indexer_state` VALUES (1,'design_config_grid','valid','2023-12-08 17:57:02','8d6bc2f35386e229616d8ecde53603f9'),(2,'customer_grid','valid','2023-12-08 16:58:57','af09430b2f423c805c3b6cf3fd890291'),(3,'catalog_category_product','invalid','2023-12-08 16:58:54','dafc42586e04a8ae03f5d1806b04b2d2'),(4,'catalog_product_category','invalid','2023-12-08 16:58:54','06e73f1b22e654ee2dff7ad79c97d922'),(5,'catalogrule_rule','invalid','2023-12-08 16:58:54','8efda8fd0ef160d65234f9082d2105f3'),(6,'catalog_product_attribute','invalid','2023-12-08 16:58:54','f9b95f2c5395625a5e5071fda0460b9a'),(7,'cataloginventory_stock','invalid','2023-12-08 16:58:54','43bcc8f2d033660be1221a9d06056166'),(8,'inventory','invalid','2023-12-08 16:58:54','5940a724462466bc2ba7a12babbcfad7'),(9,'catalogrule_product','invalid','2023-12-08 16:58:54','f577110097656fb235b3812c82ddf303'),(10,'catalog_product_price','invalid','2023-12-08 16:58:54','bab915d1d3e304eda0584764eaf94342'),(11,'catalogsearch_fulltext','invalid','2023-12-08 16:58:54','6aa9cbc6bcb6c87eefb6e1195fc91e7c');
+INSERT  IGNORE INTO `m2_indexer_state` VALUES (1,'design_config_grid','valid','2023-12-09 20:47:09','8d6bc2f35386e229616d8ecde53603f9'),(2,'customer_grid','valid','2023-12-08 16:58:57','af09430b2f423c805c3b6cf3fd890291'),(3,'catalog_category_product','invalid','2023-12-08 16:58:54','dafc42586e04a8ae03f5d1806b04b2d2'),(4,'catalog_product_category','invalid','2023-12-08 16:58:54','06e73f1b22e654ee2dff7ad79c97d922'),(5,'catalogrule_rule','invalid','2023-12-08 16:58:54','8efda8fd0ef160d65234f9082d2105f3'),(6,'catalog_product_attribute','invalid','2023-12-08 16:58:54','f9b95f2c5395625a5e5071fda0460b9a'),(7,'cataloginventory_stock','invalid','2023-12-08 16:58:54','43bcc8f2d033660be1221a9d06056166'),(8,'inventory','invalid','2023-12-08 16:58:54','5940a724462466bc2ba7a12babbcfad7'),(9,'catalogrule_product','invalid','2023-12-08 16:58:54','f577110097656fb235b3812c82ddf303'),(10,'catalog_product_price','invalid','2023-12-08 16:58:54','bab915d1d3e304eda0584764eaf94342'),(11,'catalogsearch_fulltext','invalid','2023-12-08 16:58:54','6aa9cbc6bcb6c87eefb6e1195fc91e7c');
 /*!40000 ALTER TABLE `m2_indexer_state` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -5872,6 +5889,7 @@ CREATE TABLE `m2_inventory_low_stock_notification_configuration` (
 
 LOCK TABLES `m2_inventory_low_stock_notification_configuration` WRITE;
 /*!40000 ALTER TABLE `m2_inventory_low_stock_notification_configuration` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_inventory_low_stock_notification_configuration` VALUES ('default','test',NULL);
 /*!40000 ALTER TABLE `m2_inventory_low_stock_notification_configuration` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -6084,7 +6102,7 @@ CREATE TABLE `m2_inventory_source_item` (
   UNIQUE KEY `M2_INVENTORY_SOURCE_ITEM_SOURCE_CODE_SKU` (`source_code`,`sku`),
   KEY `M2_INVENTORY_SOURCE_ITEM_SKU_SOURCE_CODE_QUANTITY` (`sku`,`source_code`,`quantity`),
   CONSTRAINT `M2_INV_SOURCE_ITEM_SOURCE_CODE_M2_INV_SOURCE_SOURCE_CODE` FOREIGN KEY (`source_code`) REFERENCES `m2_inventory_source` (`source_code`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6093,6 +6111,7 @@ CREATE TABLE `m2_inventory_source_item` (
 
 LOCK TABLES `m2_inventory_source_item` WRITE;
 /*!40000 ALTER TABLE `m2_inventory_source_item` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_inventory_source_item` VALUES (1,'default','test',100.0000,1);
 /*!40000 ALTER TABLE `m2_inventory_source_item` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -7400,7 +7419,7 @@ CREATE TABLE `m2_queue_poison_pill` (
 
 LOCK TABLES `m2_queue_poison_pill` WRITE;
 /*!40000 ALTER TABLE `m2_queue_poison_pill` DISABLE KEYS */;
-INSERT  IGNORE INTO `m2_queue_poison_pill` VALUES ('version-6573586414562');
+INSERT  IGNORE INTO `m2_queue_poison_pill` VALUES ('version-6574635f8a840');
 /*!40000 ALTER TABLE `m2_queue_poison_pill` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -7467,7 +7486,7 @@ CREATE TABLE `m2_quote` (
   KEY `M2_QUOTE_CUSTOMER_ID_STORE_ID_IS_ACTIVE` (`customer_id`,`store_id`,`is_active`),
   KEY `M2_QUOTE_STORE_ID` (`store_id`),
   CONSTRAINT `M2_QUOTE_STORE_ID_M2_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `m2_store` (`store_id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COMMENT='Sales Flat Quote';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3 COMMENT='Sales Flat Quote';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7476,6 +7495,7 @@ CREATE TABLE `m2_quote` (
 
 LOCK TABLES `m2_quote` WRITE;
 /*!40000 ALTER TABLE `m2_quote` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_quote` VALUES (1,1,'2023-12-08 20:17:56','2023-12-08 20:24:01',NULL,1,0,0,1,1.0000,0,0.0000,0.0000,'USD','USD','USD',6.0000,6.0000,NULL,NULL,3,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,'172.21.0.1',NULL,NULL,NULL,NULL,'USD',1.0000,1.0000,NULL,NULL,1.0000,1.0000,1.0000,1.0000,1,0,NULL,NULL,0),(2,1,'2023-12-08 23:46:30','2023-12-08 23:46:30',NULL,1,0,0,1,1.0000,0,0.0000,0.0000,'USD','USD','USD',1.0000,1.0000,NULL,NULL,3,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,'172.19.0.1',NULL,NULL,NULL,NULL,'USD',1.0000,1.0000,NULL,NULL,1.0000,1.0000,1.0000,1.0000,1,0,NULL,NULL,0),(3,1,'2023-12-08 23:47:22','2023-12-08 23:47:22',NULL,1,0,0,1,1.0000,0,0.0000,0.0000,'USD','USD','USD',1.0000,1.0000,NULL,NULL,3,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,'172.19.0.1',NULL,NULL,NULL,NULL,'USD',1.0000,1.0000,NULL,NULL,1.0000,1.0000,1.0000,1.0000,1,0,NULL,NULL,0),(4,1,'2023-12-09 08:42:34','2023-12-09 08:42:34',NULL,1,0,0,1,1.0000,0,0.0000,0.0000,'USD','USD','USD',1.0000,1.0000,NULL,NULL,3,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,'172.19.0.1',NULL,NULL,NULL,NULL,'USD',1.0000,1.0000,NULL,NULL,1.0000,1.0000,1.0000,1.0000,1,0,NULL,NULL,0),(5,1,'2023-12-09 12:20:26','2023-12-09 12:20:26',NULL,1,0,0,1,1.0000,0,0.0000,0.0000,'USD','USD','USD',1.0000,1.0000,NULL,NULL,3,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,'172.19.0.1',NULL,NULL,NULL,NULL,'USD',1.0000,1.0000,NULL,NULL,1.0000,1.0000,1.0000,1.0000,1,0,NULL,NULL,0);
 /*!40000 ALTER TABLE `m2_quote` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -7554,7 +7574,7 @@ CREATE TABLE `m2_quote_address` (
   PRIMARY KEY (`address_id`),
   KEY `M2_QUOTE_ADDRESS_QUOTE_ID` (`quote_id`),
   CONSTRAINT `M2_QUOTE_ADDRESS_QUOTE_ID_M2_QUOTE_ENTITY_ID` FOREIGN KEY (`quote_id`) REFERENCES `m2_quote` (`entity_id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COMMENT='Sales Flat Quote Address';
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb3 COMMENT='Sales Flat Quote Address';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7563,6 +7583,7 @@ CREATE TABLE `m2_quote_address` (
 
 LOCK TABLES `m2_quote_address` WRITE;
 /*!40000 ALTER TABLE `m2_quote_address` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_quote_address` VALUES (1,1,'2023-12-08 20:17:56','2023-12-08 20:17:56',NULL,0,NULL,'billing','asw@wss.com',NULL,'qaz',NULL,'qaz',NULL,NULL,'qaz12','qaz','Alaska',2,'18000','US','8500500',NULL,0,0,NULL,NULL,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,NULL,'null',NULL,0.0000,0.0000,0.0000,NULL,0.0000,0.0000,0.0000,NULL,0.0000,0.0000,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0),(2,1,'2023-12-08 20:17:56','2023-12-08 21:15:43',NULL,0,NULL,'shipping',NULL,NULL,'qaz',NULL,'qaz',NULL,NULL,'qaz12','qaz','Alaska',2,'18000','US','8500500',NULL,0,0,'flatrate_flatrate','Flat Rate - Fixed',0.0000,1.0000,1.0000,1.0000,1.0000,0.0000,0.0000,5.0000,5.0000,0.0000,0.0000,0.0000,0.0000,6.0000,6.0000,NULL,'[]',NULL,0.0000,0.0000,1.0000,1.0000,0.0000,0.0000,0.0000,NULL,5.0000,5.0000,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0),(3,2,'2023-12-08 23:46:30','2023-12-08 23:46:30',NULL,0,NULL,'billing',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,NULL,NULL,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,NULL,'null',NULL,0.0000,0.0000,0.0000,NULL,0.0000,0.0000,0.0000,NULL,0.0000,0.0000,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0),(4,2,'2023-12-08 23:46:30','2023-12-08 23:46:30',NULL,0,NULL,'shipping',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,0,NULL,NULL,0.0000,1.0000,1.0000,1.0000,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,1.0000,1.0000,NULL,'[]',NULL,0.0000,0.0000,1.0000,1.0000,0.0000,0.0000,0.0000,NULL,0.0000,0.0000,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0),(5,3,'2023-12-08 23:47:22','2023-12-08 23:47:22',NULL,0,NULL,'billing',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,NULL,NULL,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,NULL,'null',NULL,0.0000,0.0000,0.0000,NULL,0.0000,0.0000,0.0000,NULL,0.0000,0.0000,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0),(6,3,'2023-12-08 23:47:22','2023-12-08 23:47:22',NULL,0,NULL,'shipping',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,0,NULL,NULL,0.0000,1.0000,1.0000,1.0000,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,1.0000,1.0000,NULL,'[]',NULL,0.0000,0.0000,1.0000,1.0000,0.0000,0.0000,0.0000,NULL,0.0000,0.0000,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0),(7,4,'2023-12-09 08:42:34','2023-12-09 08:42:34',NULL,0,NULL,'billing',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,NULL,NULL,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,NULL,'null',NULL,0.0000,0.0000,0.0000,NULL,0.0000,0.0000,0.0000,NULL,0.0000,0.0000,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0),(8,4,'2023-12-09 08:42:34','2023-12-09 08:42:34',NULL,0,NULL,'shipping',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,0,NULL,NULL,0.0000,1.0000,1.0000,1.0000,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,1.0000,1.0000,NULL,'[]',NULL,0.0000,0.0000,1.0000,1.0000,0.0000,0.0000,0.0000,NULL,0.0000,0.0000,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0),(9,5,'2023-12-09 12:20:27','2023-12-09 12:20:27',NULL,0,NULL,'billing',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,NULL,NULL,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,NULL,'null',NULL,0.0000,0.0000,0.0000,NULL,0.0000,0.0000,0.0000,NULL,0.0000,0.0000,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0),(10,5,'2023-12-09 12:20:27','2023-12-09 12:20:27',NULL,0,NULL,'shipping',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,0,NULL,NULL,0.0000,1.0000,1.0000,1.0000,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,1.0000,1.0000,NULL,'[]',NULL,0.0000,0.0000,1.0000,1.0000,0.0000,0.0000,0.0000,NULL,0.0000,0.0000,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0);
 /*!40000 ALTER TABLE `m2_quote_address` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -7650,7 +7671,7 @@ CREATE TABLE `m2_quote_id_mask` (
   KEY `M2_QUOTE_ID_MASK_QUOTE_ID` (`quote_id`),
   KEY `M2_QUOTE_ID_MASK_MASKED_ID` (`masked_id`),
   CONSTRAINT `M2_QUOTE_ID_MASK_QUOTE_ID_M2_QUOTE_ENTITY_ID` FOREIGN KEY (`quote_id`) REFERENCES `m2_quote` (`entity_id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COMMENT='Quote ID and masked ID mapping';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3 COMMENT='Quote ID and masked ID mapping';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7659,6 +7680,7 @@ CREATE TABLE `m2_quote_id_mask` (
 
 LOCK TABLES `m2_quote_id_mask` WRITE;
 /*!40000 ALTER TABLE `m2_quote_id_mask` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_quote_id_mask` VALUES (5,5,'bQdNudfMMsCUv7aGBWHxPTKs0J3wvDqW'),(2,2,'FIQo43tQPrISAJezESJQo1HRf5K1EO13'),(3,3,'Gy9yWBFOXTsnFPR0DKDO8TXNCURjJQba'),(1,1,'HWsfCKTnLPJmIyGgbPqzMRCj5Q9oUJgX'),(4,4,'OaXlSX7vhNUy42XknPpbe0gXusi0qHzA');
 /*!40000 ALTER TABLE `m2_quote_id_mask` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -7731,7 +7753,7 @@ CREATE TABLE `m2_quote_item` (
   CONSTRAINT `M2_QUOTE_ITEM_PARENT_ITEM_ID_M2_QUOTE_ITEM_ITEM_ID` FOREIGN KEY (`parent_item_id`) REFERENCES `m2_quote_item` (`item_id`) ON DELETE CASCADE,
   CONSTRAINT `M2_QUOTE_ITEM_QUOTE_ID_M2_QUOTE_ENTITY_ID` FOREIGN KEY (`quote_id`) REFERENCES `m2_quote` (`entity_id`) ON DELETE CASCADE,
   CONSTRAINT `M2_QUOTE_ITEM_STORE_ID_M2_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `m2_store` (`store_id`) ON DELETE SET NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COMMENT='Sales Flat Quote Item';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3 COMMENT='Sales Flat Quote Item';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7740,6 +7762,7 @@ CREATE TABLE `m2_quote_item` (
 
 LOCK TABLES `m2_quote_item` WRITE;
 /*!40000 ALTER TABLE `m2_quote_item` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_quote_item` VALUES (1,1,'2023-12-08 20:17:56','2023-12-08 20:17:56',1,1,NULL,0,'test','test',NULL,NULL,NULL,0,0,NULL,1.0000,1.0000,1.0000,NULL,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,1.0000,1.0000,0.0000,0.0000,'simple',NULL,NULL,NULL,NULL,NULL,1.0000,1.0000,1.0000,1.0000,0.0000,0.0000,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(2,2,'2023-12-08 23:46:30','2023-12-08 23:46:30',1,1,NULL,0,'test','test',NULL,NULL,NULL,0,0,NULL,1.0000,1.0000,1.0000,NULL,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,1.0000,1.0000,0.0000,0.0000,'simple',NULL,NULL,NULL,NULL,NULL,1.0000,1.0000,1.0000,1.0000,0.0000,0.0000,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(3,3,'2023-12-08 23:47:22','2023-12-08 23:47:22',1,1,NULL,0,'test','test',NULL,NULL,NULL,0,0,NULL,1.0000,1.0000,1.0000,NULL,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,1.0000,1.0000,0.0000,0.0000,'simple',NULL,NULL,NULL,NULL,NULL,1.0000,1.0000,1.0000,1.0000,0.0000,0.0000,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(4,4,'2023-12-09 08:42:34','2023-12-09 08:42:34',1,1,NULL,0,'test','test',NULL,NULL,NULL,0,0,NULL,1.0000,1.0000,1.0000,NULL,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,1.0000,1.0000,0.0000,0.0000,'simple',NULL,NULL,NULL,NULL,NULL,1.0000,1.0000,1.0000,1.0000,0.0000,0.0000,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(5,5,'2023-12-09 12:20:27','2023-12-09 12:20:27',1,1,NULL,0,'test','test',NULL,NULL,NULL,0,0,NULL,1.0000,1.0000,1.0000,NULL,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,1.0000,1.0000,0.0000,0.0000,'simple',NULL,NULL,NULL,NULL,NULL,1.0000,1.0000,1.0000,1.0000,0.0000,0.0000,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `m2_quote_item` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -7759,7 +7782,7 @@ CREATE TABLE `m2_quote_item_option` (
   PRIMARY KEY (`option_id`),
   KEY `M2_QUOTE_ITEM_OPTION_ITEM_ID` (`item_id`),
   CONSTRAINT `M2_QUOTE_ITEM_OPTION_ITEM_ID_M2_QUOTE_ITEM_ITEM_ID` FOREIGN KEY (`item_id`) REFERENCES `m2_quote_item` (`item_id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COMMENT='Sales Flat Quote Item Option';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3 COMMENT='Sales Flat Quote Item Option';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7768,6 +7791,7 @@ CREATE TABLE `m2_quote_item_option` (
 
 LOCK TABLES `m2_quote_item_option` WRITE;
 /*!40000 ALTER TABLE `m2_quote_item_option` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_quote_item_option` VALUES (1,1,1,'info_buyRequest','{\"uenc\":\"aHR0cHM6Ly90ZXN0LmxvY2FsL3Rlc3QuaHRtbA,,\",\"product\":\"1\",\"selected_configurable_option\":\"\",\"related_product\":\"\",\"item\":\"1\",\"qty\":\"1\"}'),(2,2,1,'info_buyRequest','{\"uenc\":\"aHR0cHM6Ly90ZXN0LmxvY2FsL3Rlc3QuaHRtbA,,\",\"product\":\"1\",\"selected_configurable_option\":\"\",\"related_product\":\"\",\"item\":\"1\",\"qty\":\"1\"}'),(3,3,1,'info_buyRequest','{\"uenc\":\"aHR0cHM6Ly90ZXN0LmxvY2FsL3Rlc3QuaHRtbA,,\",\"product\":\"1\",\"selected_configurable_option\":\"\",\"related_product\":\"\",\"item\":\"1\",\"qty\":\"1\"}'),(4,4,1,'info_buyRequest','{\"uenc\":\"aHR0cHM6Ly90ZXN0LmxvY2FsL3Rlc3QuaHRtbA,,\",\"product\":\"1\",\"selected_configurable_option\":\"\",\"related_product\":\"\",\"item\":\"1\",\"qty\":\"1\"}'),(5,5,1,'info_buyRequest','{\"uenc\":\"aHR0cHM6Ly90ZXN0LmxvY2FsL3Rlc3QuaHRtbA,,\",\"product\":\"1\",\"selected_configurable_option\":\"\",\"related_product\":\"\",\"item\":\"1\",\"qty\":\"1\"}');
 /*!40000 ALTER TABLE `m2_quote_item_option` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -7804,7 +7828,7 @@ CREATE TABLE `m2_quote_payment` (
   PRIMARY KEY (`payment_id`),
   KEY `M2_QUOTE_PAYMENT_QUOTE_ID` (`quote_id`),
   CONSTRAINT `M2_QUOTE_PAYMENT_QUOTE_ID_M2_QUOTE_ENTITY_ID` FOREIGN KEY (`quote_id`) REFERENCES `m2_quote` (`entity_id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COMMENT='Sales Flat Quote Payment';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 COMMENT='Sales Flat Quote Payment';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7813,6 +7837,7 @@ CREATE TABLE `m2_quote_payment` (
 
 LOCK TABLES `m2_quote_payment` WRITE;
 /*!40000 ALTER TABLE `m2_quote_payment` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_quote_payment` VALUES (1,1,'2023-12-08 20:24:02','2023-12-08 20:24:02','checkmo',NULL,NULL,NULL,NULL,NULL,NULL,0,NULL,0,0,NULL,NULL,NULL,'null',NULL,NULL,NULL);
 /*!40000 ALTER TABLE `m2_quote_payment` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -7839,7 +7864,7 @@ CREATE TABLE `m2_quote_shipping_rate` (
   PRIMARY KEY (`rate_id`),
   KEY `M2_QUOTE_SHIPPING_RATE_ADDRESS_ID` (`address_id`),
   CONSTRAINT `M2_QUOTE_SHIPPING_RATE_ADDRESS_ID_M2_QUOTE_ADDRESS_ADDRESS_ID` FOREIGN KEY (`address_id`) REFERENCES `m2_quote_address` (`address_id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COMMENT='Sales Flat Quote Shipping Rate';
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb3 COMMENT='Sales Flat Quote Shipping Rate';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7848,6 +7873,7 @@ CREATE TABLE `m2_quote_shipping_rate` (
 
 LOCK TABLES `m2_quote_shipping_rate` WRITE;
 /*!40000 ALTER TABLE `m2_quote_shipping_rate` DISABLE KEYS */;
+INSERT  IGNORE INTO `m2_quote_shipping_rate` VALUES (9,2,'2023-12-08 21:15:43','2023-12-08 21:15:43','flatrate','Flat Rate','flatrate_flatrate','flatrate',NULL,5.0000,NULL,'Fixed');
 /*!40000 ALTER TABLE `m2_quote_shipping_rate` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11462,7 +11488,7 @@ CREATE TABLE `m2_theme` (
   `type` smallint NOT NULL COMMENT 'Theme type: 0:physical, 1:virtual, 2:staging',
   `code` text COMMENT 'Full theme code, including package',
   PRIMARY KEY (`theme_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3 COMMENT='Core theme';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3 COMMENT='Core theme';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11471,7 +11497,7 @@ CREATE TABLE `m2_theme` (
 
 LOCK TABLES `m2_theme` WRITE;
 /*!40000 ALTER TABLE `m2_theme` DISABLE KEYS */;
-INSERT  IGNORE INTO `m2_theme` VALUES (1,NULL,'Magento/blank','Magento Blank','preview_image_65734b4da2520.jpeg',0,'frontend',0,'Magento/blank'),(2,NULL,'Magento/backend','Magento 2 backend',NULL,0,'adminhtml',0,'Magento/backend'),(3,1,'Magento/luma','Magento Luma','preview_image_65734b4dad791.jpeg',0,'frontend',0,'Magento/luma'),(4,3,'Test/New','New','preview_image_657353d6c5343.jpeg',0,'frontend',0,'Test/New');
+INSERT  IGNORE INTO `m2_theme` VALUES (1,NULL,'Magento/blank','Magento Blank','preview_image_65734b4da2520.jpeg',0,'frontend',0,'Magento/blank'),(2,NULL,'Magento/backend','Magento 2 backend',NULL,0,'adminhtml',0,'Magento/backend'),(3,1,'Magento/luma','Magento Luma','preview_image_65734b4dad791.jpeg',0,'frontend',0,'Magento/luma'),(4,3,'Test/New','New','preview_image_657353d6c5343.jpeg',0,'frontend',1,'Test/New'),(5,3,'Test/NewTheme','NewTheme','preview_image_6574d224dbf4e.jpeg',0,'frontend',0,'Test/NewTheme');
 /*!40000 ALTER TABLE `m2_theme` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11554,7 +11580,7 @@ CREATE TABLE `m2_ui_bookmark` (
   PRIMARY KEY (`bookmark_id`),
   KEY `M2_UI_BOOKMARK_USER_ID_NAMESPACE_IDENTIFIER` (`user_id`,`namespace`,`identifier`),
   CONSTRAINT `M2_UI_BOOKMARK_USER_ID_M2_ADMIN_USER_USER_ID` FOREIGN KEY (`user_id`) REFERENCES `m2_admin_user` (`user_id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3 COMMENT='Bookmark';
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3 COMMENT='Bookmark';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11563,7 +11589,7 @@ CREATE TABLE `m2_ui_bookmark` (
 
 LOCK TABLES `m2_ui_bookmark` WRITE;
 /*!40000 ALTER TABLE `m2_ui_bookmark` DISABLE KEYS */;
-INSERT  IGNORE INTO `m2_ui_bookmark` VALUES (1,2,'design_config_listing','default',1,'Default View','{\"views\":{\"default\":{\"label\":\"Default View\",\"index\":\"default\",\"editable\":false,\"data\":{\"columns\":{\"default\":{\"visible\":true,\"sorting\":false},\"actions\":{\"visible\":true,\"sorting\":false},\"store_website_id\":{\"visible\":true,\"sorting\":false},\"store_group_id\":{\"visible\":true,\"sorting\":false},\"store_id\":{\"visible\":true,\"sorting\":false},\"theme_theme_id\":{\"visible\":true,\"sorting\":false}},\"displayMode\":\"grid\",\"paging\":{\"pageSize\":20,\"current\":1},\"filters\":{\"applied\":{\"placeholder\":true}},\"positions\":{\"default\":0,\"store_website_id\":1,\"store_group_id\":2,\"store_id\":3,\"theme_theme_id\":4,\"actions\":5}},\"value\":\"Default View\"}}}','2023-12-08 17:54:56','2023-12-08 17:54:57'),(2,2,'design_config_listing','current',0,NULL,'{\"current\":{\"columns\":{\"default\":{\"visible\":true,\"sorting\":false},\"actions\":{\"visible\":true,\"sorting\":false},\"store_website_id\":{\"visible\":true,\"sorting\":false},\"store_group_id\":{\"visible\":true,\"sorting\":false},\"store_id\":{\"visible\":true,\"sorting\":false},\"theme_theme_id\":{\"visible\":true,\"sorting\":false}},\"displayMode\":\"grid\",\"paging\":{\"pageSize\":20,\"current\":1,\"options\":{\"20\":{\"value\":20,\"label\":20},\"30\":{\"value\":30,\"label\":30},\"50\":{\"value\":50,\"label\":50},\"100\":{\"value\":100,\"label\":100},\"200\":{\"value\":200,\"label\":200}},\"value\":20},\"filters\":{\"applied\":{\"placeholder\":true}},\"positions\":{\"default\":0,\"store_website_id\":1,\"store_group_id\":2,\"store_id\":3,\"theme_theme_id\":4,\"actions\":5}}}','2023-12-08 17:54:58','2023-12-08 17:54:58');
+INSERT  IGNORE INTO `m2_ui_bookmark` VALUES (1,2,'design_config_listing','default',1,'Default View','{\"views\":{\"default\":{\"label\":\"Default View\",\"index\":\"default\",\"editable\":false,\"data\":{\"columns\":{\"default\":{\"visible\":true,\"sorting\":false},\"actions\":{\"visible\":true,\"sorting\":false},\"store_website_id\":{\"visible\":true,\"sorting\":false},\"store_group_id\":{\"visible\":true,\"sorting\":false},\"store_id\":{\"visible\":true,\"sorting\":false},\"theme_theme_id\":{\"visible\":true,\"sorting\":false}},\"displayMode\":\"grid\",\"paging\":{\"pageSize\":20,\"current\":1},\"filters\":{\"applied\":{\"placeholder\":true}},\"positions\":{\"default\":0,\"store_website_id\":1,\"store_group_id\":2,\"store_id\":3,\"theme_theme_id\":4,\"actions\":5}},\"value\":\"Default View\"}}}','2023-12-08 17:54:56','2023-12-08 17:54:57'),(2,2,'design_config_listing','current',0,NULL,'{\"current\":{\"columns\":{\"default\":{\"visible\":true,\"sorting\":false},\"actions\":{\"visible\":true,\"sorting\":false},\"store_website_id\":{\"visible\":true,\"sorting\":false},\"store_group_id\":{\"visible\":true,\"sorting\":false},\"store_id\":{\"visible\":true,\"sorting\":false},\"theme_theme_id\":{\"visible\":true,\"sorting\":false}},\"displayMode\":\"grid\",\"paging\":{\"pageSize\":20,\"current\":1,\"options\":{\"20\":{\"value\":20,\"label\":20},\"30\":{\"value\":30,\"label\":30},\"50\":{\"value\":50,\"label\":50},\"100\":{\"value\":100,\"label\":100},\"200\":{\"value\":200,\"label\":200}},\"value\":20},\"filters\":{\"applied\":{\"placeholder\":true}},\"positions\":{\"default\":0,\"store_website_id\":1,\"store_group_id\":2,\"store_id\":3,\"theme_theme_id\":4,\"actions\":5}}}','2023-12-08 17:54:58','2023-12-08 17:54:58'),(3,3,'design_config_listing','default',1,'Default View','{\"views\":{\"default\":{\"label\":\"Default View\",\"index\":\"default\",\"editable\":false,\"data\":{\"columns\":{\"default\":{\"visible\":true,\"sorting\":false},\"actions\":{\"visible\":true,\"sorting\":false},\"store_website_id\":{\"visible\":true,\"sorting\":false},\"store_group_id\":{\"visible\":true,\"sorting\":false},\"store_id\":{\"visible\":true,\"sorting\":false},\"theme_theme_id\":{\"visible\":true,\"sorting\":false}},\"displayMode\":\"grid\",\"paging\":{\"pageSize\":20,\"current\":1,\"options\":{\"20\":{\"value\":20,\"label\":20},\"30\":{\"value\":30,\"label\":30},\"50\":{\"value\":50,\"label\":50},\"100\":{\"value\":100,\"label\":100},\"200\":{\"value\":200,\"label\":200}},\"value\":20},\"positions\":{\"default\":0,\"store_website_id\":1,\"store_group_id\":2,\"store_id\":3,\"theme_theme_id\":4,\"actions\":5},\"filters\":{\"applied\":{\"placeholder\":true}}},\"value\":\"Default View\"}}}','2023-12-08 18:24:33','2023-12-08 18:24:33'),(4,3,'design_config_listing','current',0,NULL,'{\"current\":{\"columns\":{\"default\":{\"visible\":true,\"sorting\":false},\"actions\":{\"visible\":true,\"sorting\":false},\"store_website_id\":{\"visible\":true,\"sorting\":false},\"store_group_id\":{\"visible\":true,\"sorting\":false},\"store_id\":{\"visible\":true,\"sorting\":false},\"theme_theme_id\":{\"visible\":true,\"sorting\":false}},\"displayMode\":\"grid\",\"paging\":{\"pageSize\":20,\"current\":1,\"options\":{\"20\":{\"value\":20,\"label\":20},\"30\":{\"value\":30,\"label\":30},\"50\":{\"value\":50,\"label\":50},\"100\":{\"value\":100,\"label\":100},\"200\":{\"value\":200,\"label\":200}},\"value\":20},\"positions\":{\"default\":0,\"store_website_id\":1,\"store_group_id\":2,\"store_id\":3,\"theme_theme_id\":4,\"actions\":5},\"filters\":{\"applied\":{\"placeholder\":true}}}}','2023-12-08 18:24:34','2023-12-08 18:24:34'),(5,3,'product_listing','default',1,'Default View','{\"views\":{\"default\":{\"label\":\"Default View\",\"index\":\"default\",\"editable\":false,\"data\":{\"columns\":{\"entity_id\":{\"visible\":true,\"sorting\":\"asc\"},\"name\":{\"visible\":true,\"sorting\":false},\"sku\":{\"visible\":true,\"sorting\":false},\"price\":{\"visible\":true,\"sorting\":false},\"websites\":{\"visible\":true,\"sorting\":false},\"qty\":{\"visible\":true,\"sorting\":false},\"short_description\":{\"visible\":false,\"sorting\":false},\"special_price\":{\"visible\":false,\"sorting\":false},\"cost\":{\"visible\":false,\"sorting\":false},\"weight\":{\"visible\":false,\"sorting\":false},\"meta_title\":{\"visible\":false,\"sorting\":false},\"meta_keyword\":{\"visible\":false,\"sorting\":false},\"meta_description\":{\"visible\":false,\"sorting\":false},\"msrp\":{\"visible\":false,\"sorting\":false},\"url_key\":{\"visible\":false,\"sorting\":false},\"actions\":{\"visible\":true,\"sorting\":false},\"type_id\":{\"visible\":true,\"sorting\":false},\"attribute_set_id\":{\"visible\":true,\"sorting\":false},\"visibility\":{\"visible\":true,\"sorting\":false},\"status\":{\"visible\":true,\"sorting\":false},\"manufacturer\":{\"visible\":false,\"sorting\":false},\"color\":{\"visible\":false,\"sorting\":false},\"custom_design\":{\"visible\":false,\"sorting\":false},\"page_layout\":{\"visible\":false,\"sorting\":false},\"country_of_manufacture\":{\"visible\":false,\"sorting\":false},\"custom_layout\":{\"visible\":false,\"sorting\":false},\"gift_message_available\":{\"visible\":false,\"sorting\":false},\"tax_class_id\":{\"visible\":false,\"sorting\":false},\"ids\":{\"visible\":true,\"sorting\":false},\"salable_quantity\":{\"visible\":true,\"sorting\":false},\"thumbnail\":{\"visible\":true,\"sorting\":false},\"special_from_date\":{\"visible\":false,\"sorting\":false},\"special_to_date\":{\"visible\":false,\"sorting\":false},\"news_from_date\":{\"visible\":false,\"sorting\":false},\"news_to_date\":{\"visible\":false,\"sorting\":false},\"custom_design_from\":{\"visible\":false,\"sorting\":false},\"custom_design_to\":{\"visible\":false,\"sorting\":false}},\"search\":{\"value\":\"\"},\"filters\":{\"applied\":{\"placeholder\":true}},\"displayMode\":\"grid\",\"paging\":{\"pageSize\":20,\"current\":1,\"options\":{\"20\":{\"value\":20,\"label\":20},\"30\":{\"value\":30,\"label\":30},\"50\":{\"value\":50,\"label\":50},\"100\":{\"value\":100,\"label\":100},\"200\":{\"value\":200,\"label\":200}},\"value\":20},\"positions\":{\"ids\":0,\"entity_id\":1,\"thumbnail\":2,\"name\":3,\"type_id\":4,\"attribute_set_id\":5,\"sku\":6,\"price\":7,\"qty\":8,\"salable_quantity\":9,\"visibility\":10,\"status\":11,\"websites\":12,\"short_description\":13,\"special_price\":14,\"special_from_date\":15,\"special_to_date\":16,\"cost\":17,\"weight\":18,\"manufacturer\":19,\"meta_title\":20,\"meta_keyword\":21,\"meta_description\":22,\"color\":23,\"news_from_date\":24,\"news_to_date\":25,\"custom_design\":26,\"custom_design_from\":27,\"custom_design_to\":28,\"page_layout\":29,\"country_of_manufacture\":30,\"custom_layout\":31,\"msrp\":32,\"url_key\":33,\"gift_message_available\":34,\"tax_class_id\":35,\"actions\":36}},\"value\":\"Default View\"}}}','2023-12-08 20:14:29','2023-12-08 20:14:29'),(6,3,'product_listing','current',0,NULL,'{\"current\":{\"columns\":{\"entity_id\":{\"visible\":true,\"sorting\":\"asc\"},\"name\":{\"visible\":true,\"sorting\":false},\"sku\":{\"visible\":true,\"sorting\":false},\"price\":{\"visible\":true,\"sorting\":false},\"websites\":{\"visible\":true,\"sorting\":false},\"qty\":{\"visible\":true,\"sorting\":false},\"short_description\":{\"visible\":false,\"sorting\":false},\"special_price\":{\"visible\":false,\"sorting\":false},\"cost\":{\"visible\":false,\"sorting\":false},\"weight\":{\"visible\":false,\"sorting\":false},\"meta_title\":{\"visible\":false,\"sorting\":false},\"meta_keyword\":{\"visible\":false,\"sorting\":false},\"meta_description\":{\"visible\":false,\"sorting\":false},\"msrp\":{\"visible\":false,\"sorting\":false},\"url_key\":{\"visible\":false,\"sorting\":false},\"actions\":{\"visible\":true,\"sorting\":false},\"type_id\":{\"visible\":true,\"sorting\":false},\"attribute_set_id\":{\"visible\":true,\"sorting\":false},\"visibility\":{\"visible\":true,\"sorting\":false},\"status\":{\"visible\":true,\"sorting\":false},\"manufacturer\":{\"visible\":false,\"sorting\":false},\"color\":{\"visible\":false,\"sorting\":false},\"custom_design\":{\"visible\":false,\"sorting\":false},\"page_layout\":{\"visible\":false,\"sorting\":false},\"country_of_manufacture\":{\"visible\":false,\"sorting\":false},\"custom_layout\":{\"visible\":false,\"sorting\":false},\"gift_message_available\":{\"visible\":false,\"sorting\":false},\"tax_class_id\":{\"visible\":false,\"sorting\":false},\"ids\":{\"visible\":true,\"sorting\":false},\"salable_quantity\":{\"visible\":true,\"sorting\":false},\"thumbnail\":{\"visible\":true,\"sorting\":false},\"special_from_date\":{\"visible\":false,\"sorting\":false},\"special_to_date\":{\"visible\":false,\"sorting\":false},\"news_from_date\":{\"visible\":false,\"sorting\":false},\"news_to_date\":{\"visible\":false,\"sorting\":false},\"custom_design_from\":{\"visible\":false,\"sorting\":false},\"custom_design_to\":{\"visible\":false,\"sorting\":false}},\"search\":{\"value\":\"\"},\"filters\":{\"applied\":{\"placeholder\":true}},\"displayMode\":\"grid\",\"paging\":{\"pageSize\":20,\"current\":1,\"options\":{\"20\":{\"value\":20,\"label\":20},\"30\":{\"value\":30,\"label\":30},\"50\":{\"value\":50,\"label\":50},\"100\":{\"value\":100,\"label\":100},\"200\":{\"value\":200,\"label\":200}},\"value\":20},\"positions\":{\"ids\":0,\"entity_id\":1,\"thumbnail\":2,\"name\":3,\"type_id\":4,\"attribute_set_id\":5,\"sku\":6,\"price\":7,\"qty\":8,\"salable_quantity\":9,\"visibility\":10,\"status\":11,\"websites\":12,\"short_description\":13,\"special_price\":14,\"special_from_date\":15,\"special_to_date\":16,\"cost\":17,\"weight\":18,\"manufacturer\":19,\"meta_title\":20,\"meta_keyword\":21,\"meta_description\":22,\"color\":23,\"news_from_date\":24,\"news_to_date\":25,\"custom_design\":26,\"custom_design_from\":27,\"custom_design_to\":28,\"page_layout\":29,\"country_of_manufacture\":30,\"custom_layout\":31,\"msrp\":32,\"url_key\":33,\"gift_message_available\":34,\"tax_class_id\":35,\"actions\":36}}}','2023-12-08 20:14:31','2023-12-08 20:14:31');
 /*!40000 ALTER TABLE `m2_ui_bookmark` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11591,7 +11617,7 @@ CREATE TABLE `m2_url_rewrite` (
   KEY `M2_URL_REWRITE_STORE_ID_ENTITY_ID` (`store_id`,`entity_id`),
   KEY `M2_URL_REWRITE_ENTITY_ID` (`entity_id`),
   KEY `M2_URL_REWRITE_IS_AUTOGENERATED_METADATA` (`is_autogenerated`,`metadata`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3 COMMENT='Url Rewrites';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3 COMMENT='Url Rewrites';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11600,7 +11626,7 @@ CREATE TABLE `m2_url_rewrite` (
 
 LOCK TABLES `m2_url_rewrite` WRITE;
 /*!40000 ALTER TABLE `m2_url_rewrite` DISABLE KEYS */;
-INSERT  IGNORE INTO `m2_url_rewrite` VALUES (1,'cms-page',1,'no-route','cms/page/view/page_id/1',0,1,NULL,1,NULL),(2,'cms-page',2,'home','cms/page/view/page_id/2',0,1,NULL,1,NULL),(3,'cms-page',3,'enable-cookies','cms/page/view/page_id/3',0,1,NULL,1,NULL),(4,'cms-page',4,'privacy-policy-cookie-restriction-mode','cms/page/view/page_id/4',0,1,NULL,1,NULL);
+INSERT  IGNORE INTO `m2_url_rewrite` VALUES (1,'cms-page',1,'no-route','cms/page/view/page_id/1',0,1,NULL,1,NULL),(2,'cms-page',2,'home','cms/page/view/page_id/2',0,1,NULL,1,NULL),(3,'cms-page',3,'enable-cookies','cms/page/view/page_id/3',0,1,NULL,1,NULL),(4,'cms-page',4,'privacy-policy-cookie-restriction-mode','cms/page/view/page_id/4',0,1,NULL,1,NULL),(5,'product',1,'test.html','catalog/product/view/id/1',0,1,NULL,1,NULL);
 /*!40000 ALTER TABLE `m2_url_rewrite` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11996,4 +12022,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-12-08 18:10:26
+-- Dump completed on 2023-12-09 20:50:02

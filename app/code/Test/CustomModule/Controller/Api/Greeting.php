@@ -17,7 +17,7 @@ class Greeting extends \Magento\Framework\App\Action\Action
         $this->scopeConfig = $scopeConfig;
     }
 
-    public function execute(): \Magento\Framework\Controller\Result\Json|\Magento\Framework\Controller\ResultInterface|\Magento\Framework\App\ResponseInterface
+    public function execute()
     {
         $greetingMessage = $this->scopeConfig->getValue('new/general/greeting_message');
 
