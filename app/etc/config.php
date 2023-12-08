@@ -328,6 +328,6 @@ return [
         'PayPal_Braintree' => 1,
         'PayPal_BraintreeGraphQl' => 1,
         'Temando_ShippingRemover' => 1,
-        'Test_New' => 1
+        'Test_CustomModule' => 1
     ]
 ];
