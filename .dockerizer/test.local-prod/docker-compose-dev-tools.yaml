@@ -1,0 +1,34 @@
+version: '3.7'
+services:
+  php:
+    image: 'defaultvalue/php:8.1-development'
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    environment:
+      - ADDITIONAL_PATH=/usr/local/go/bin
+      - PHP_IDE_CONFIG=serverName=test.local
+  mailhog:
+    image: 'mailhog/mailhog:v1.0.1'
+    restart: always
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.mh-prod-test-local-http.rule=Host(`mh-prod-test.local`)
+      - traefik.http.routers.mh-prod-test-local-http.entrypoints=http
+      - traefik.http.services.mh-prod-test-local-http.loadbalancer.server.port=8025
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.pma-prod-test-local-http.rule=Host(`pma-prod-test.local`)
+      - traefik.http.routers.pma-prod-test-local-http.entrypoints=http
+    depends_on:
+      - mysql
+    environment:
+      PMA_HOSTS: mysql
+      PMA_USER: magento_user
+      PMA_PASSWORD: 'dB1{_zF-S=ku:W@l'
+      PMA_DATABASE: magento_db
+      PMA_ABSOLUTE_URI: 'http://pma-prod-test.local/'
+    volumes:
+      - /sessions
