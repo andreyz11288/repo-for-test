@@ -1,17 +1,14 @@
 <?php
+declare(strict_types=1);
 namespace Test\CustomModule\Block;
 
-use Magento\Framework\View\Element\Template\Context;
-use Magento\Framework\View\Element\Template;
-use Magento\Framework\App\Config\ScopeConfigInterface;
-
-class Greeting extends Template
+class Greeting extends \Magento\Framework\View\Element\Template
 {
     protected $scopeConfig;
 
     public function __construct(
-        Context $context,
-        ScopeConfigInterface $scopeConfig,
+        \Magento\Framework\View\Element\Template\Context $context,
+        \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig,
         array $data = []
     ) {
         parent::__construct($context, $data);
